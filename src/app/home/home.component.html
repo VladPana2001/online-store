@@ -1,0 +1,25 @@
+<app-category></app-category>
+<ul>
+    <li *ngFor="let gun of guns">
+        <a [routerLink]="'/gun/' + gun.id">
+            <div class="card-img">
+                <img src="{{gun.imageUrl}}" alt="">
+            </div>
+            
+            <div class="content">
+                <div class="name">
+                    {{gun.name}}
+                </div>
+                <div class="type">
+                    Type: {{gun.type}}
+                </div>
+                <div class="weight">
+                    Weight: {{gun.weight}} kg
+                </div>
+                <div class="price">
+                    Price: {{gun.price|currency}}
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>

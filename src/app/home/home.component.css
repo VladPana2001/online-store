@@ -1,0 +1,32 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a{
+    height: 25rem;
+    width: 25rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+    align-items: center;
+}
+
+ul li a img{
+    height: 15rem;
+    width: 15rem;
+}
+
+li a:hover{
+    transition: 500ms;
+    opacity: 50%;
+}
+
